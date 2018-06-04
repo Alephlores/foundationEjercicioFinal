@@ -2,217 +2,256 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ejercicio tienda</title>
+    <title>Gastronomia</title>
     <link rel="stylesheet" href="css/foundation.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
   </head>
+
+
   <body>
-    <div class="row">
+    <div class="rows">
 
-      <div class="small-12 columns small-order-1">
-          <div class="row align-center">
-            <div class="medium-3 columns text-center">
-              <h1>e-Store</h1>
+      <div class="row barraSup">
+        <div class="small-12 large-4 columns">
+          <div class="small-12 columns">
+            <h1 class="title">Cocinando con estilo</h1>
+          </div>
+        <div class="small-12 columns ">
+            <h4 class="text-right" style="color: #11e2aaa3">Amantes de la cocina</h4>
+        </div>
+      </div>
+
+        <div class="small-12 large-8 columns show-for-medium"></div>
+    </div>
+
+
+<!--COLUMNA IZQUIERDA-->
+    <div class=" row">
+      <div class="medium-4 columns callout menuLeft ">
+          <div class="input-group input-group-rounded">
+            <input class="input-group-field" type="search">
+              <div class="input-group-button">
+                <input type="submit" class="button primary" value="Buscar">
+              </div>
+          </div>
+
+<!--NAVEGADOR VERTICAL IZQUIERDO-->
+      <div class="stacked button-group">
+          <a class="button hollow button success nav">Inicio</a>
+          <a class="button hollow button success nav">Mi plato perfecto</a>
+          <a class="button hollow button success nav">Mis recetas</a>
+      </div>
+
+
+<!--IMAGENES FAVORITAS  IZQUIERDA-->
+        <div class="row large-uncollapse hide-for-small-only">
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato1.jpg" alt="decoracion4" class="thumbnail">
             </div>
-            <div class="medium-4 columns medium-offset-5">
-              <div class="column row">
-                <div class="menu align-right hide-for-small-only">
-                  <li><a href="#">Ingresa</a></li>
-                  <li><a href="#">Regístrate</a></li>
-                  <li><a href="#">Ayuda</a></li>
-                  <li><a href="#">Mapa del sitio</a></li>
-                </div>
-              </div>
-              <div class="row">
-                <div class="medium-9 columns medium-offset-3 hide-for-small-only show-for-landscape">
-                  <ul class="menu align-right">
-                    <li><a><i class="step fi-social-facebook size-36"></i></a></li>
-                    <li><a><i class="step fi-social-instagram size-36"></i></a></li>
-                    <li><a><i class="step fi-social-twitter size-36"></i></a></li>
-                    <li><a><i class="step fi-social-youtube size-36"></i></a></li>
-                    <li><a><i class="step fi-social-pinterest size-36"></i></a></li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato2.jpg" alt="decoracion5" class="thumbnail">
+            </div>
+          </div>
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato3.jpg" alt="decoracion6" class="thumbnail">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row large-uncollapse hide-for-small-only">
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato1.jpg" alt="decoracion4" class="thumbnail">
+            </div>
+          </div>
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato2.jpg" alt="decoracion5" class="thumbnail">
+            </div>
+          </div>
+          <div class="small-4 column">
+            <div class=" text-center">
+              <img src="img/plato3.jpg" alt="decoracion6" class="thumbnail">
             </div>
           </div>
         </div>
 
-  <div class="small-12 columns  small-order-4 medium-order-2">
-    <div class="column row">
-      <div class="button-group expanded stacked-for-small">
-        <a href="#" class="button">Hogar</a>
-        <a href="#" class="button">Salud</a>
-        <a href="#" class="button">Deporte</a>
-        <a href="#" class="button">Tecnología</a>
-        <a href="#" class="button">Accesorios</a>
-        <a href="#" class="button">Ropa</a>
-        <a href="#" class="button">Mantenimiento</a>
-        <a href="#" class="button hollow alert" ><span>Carrito</span> <i class="fi-shopping-cart"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="small-12 columns small-order-2">
-    <div class="column row">
-      <ul class="breadcrumbs">
-        <li> <a href="#">Home</a> </li>
-        <li> <a href="#">Hogar</a> </li>
-        <li> <a href="#">Varios</a> </li>
-        <li> <a href="#">Decoración</a> </li>
-      </ul>
-    </div>
-  </div>
-<!--COLUMNA DE BUSQUEDA AVANZADA-->
-<div class="small-12 columns small-order-3">
-    <div class="row large-uncollapse">
-        <div class="large-3 medium-4 columns show-for-medium">
-          <div class="callout">
-            <h4>Busqueda Avanzada</h4>
-            <p class="show-for-sr">
-                A continuación hay un formulario para hacer búsquedas avanzadas.
-            </p>
-            <form class="" action="index.html" method="post">
-              <div class="row column">
-                <label for="nombre">Por nombre
-                  <input type="text" name="nombre" value="">
-                </label>
-              </div>
-              <div class="row column">
-                <label for="referencia">Por referencia
-                  <input type="text"  aria-describedby="ayudaTexto">
-                </label>
-                <p class="help-text" id="ayudaTexto">Número único del producto</p>
-              </div>
-              <div class="row column">
-                <label for="categoria">Por categoría
-                  <select class="" name="categoria">
-                    <option value="hogar">Hogar</option>
-                    <option value="salud">Salud</option>
-                    <option value="deporte">Deporte</option>
-                    <option value="tecnologia">Tecnología</option>
-                    <option value="accesorios">Accesorios</option>
-                    <option value="ropa">Ropa</option>
-                    <option value="mantenimiento">Mantenimiento</option>
-                  </select>
-                </label>
-              </div>
-
-              <div class="row column">
-              <fieldset>
-                <legend>Tipo de producto:</legend>
-                <input id="nuevo-check" type="checkbox"><label for="checkbox1">Nuevo</label>
-                <input id="usado-check" type="checkbox"><label for="checkbox2">Usado</label>
-              </fieldset>
-            </div>
-
-              <div class="row column">
-                <fieldset>
-                <legend>Tipo de precio:</legend>
-                <input type="radio" name="tipo-precio" value="" id="pleno"><label for="pleno">Pleno</label>
-                <input type="radio" name="tipo-precio" value="" id="en_oferta"><label for="en_oferta">En oferta</label>
-              </fieldset>
-              </div>
-
-              <div class="row column text-center">
-                  <label>¿Buscar productos agotados?</label>
-                  <div class="switch medium">
-                    <input class="switch-input" id="agotados-switch" type="checkbox">
-                    <label class="switch-paddle" for="agotados-switch">
-                      <span class="switch-active" aria-hidden="true">Si</span>
-                      <span class="switch-inactive" aria-hidden="true">No</span>
-                    </label>
-                  </div>
-            </div>
-
-
-       <hr>
-                  <div class="row column text-center">
-                    <button type="submit" name="enviar" class="button">Buscar
-                      <i class="step fi-magnifying-glass"></i>
-                    </button>
-                  </div>
-
-                </form>
-          </div>
+<!--HISTORIAL DE ENTRADAS-->
+        <div class="stacked button-group text-left hide-for-small-only">
+          <ul class="vertical menu">
+            <li> <h4>Historial</h4> </li>
+            <li><a href="#">Pastas</a></li>
+            <li><a href="#">Carnes asadas</a></li>
+            <li><a href="#">Carnes al horno</a></li>
+            <li><a href="#">Mix de vegetales</a></li>
+            <li><a href="#">Pollo al horno</a></li>
+            <li><a href="#">Ensaladas Ligth</a></li>
+            <li><a href="#">Estilos de pizzas</a></li>
+            <li><a href="#">Postres</a></li>
+            <li><a href="#">Especial Navidad</a></li>
+            <li><a href="#">Tortas de cumpleaños</a></li>
+          </ul>
         </div>
-
-<!--FIN DE BUSQUEDA AVANZADA-->
-
-        <div class="large-9 columns ">
-          <div class="callout">
-            <h3>Decoración</h3>
-
-          <hr>
-<!--PRIMERA FILA DE DECORACION-->
-        <div class="row large-uncollapse">
-
-            <div class="large-4 medium-6 small-12 column">
-              <div class="secondary callout text-center">
-                <img src="img/deco1.jpg" alt="decoracion1" class="thumbnail">
-                <h5>Decoración 1</h5>
-                <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-              </div>
-            </div>
-
-            <div class="large-4 medium-6 small-12 column">
-                <div class="secondary callout text-center">
-                  <img src="img/deco2.jpg" alt="decoracion2" class="thumbnail">
-                  <h5>Decoración 2</h5>
-                  <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-                </div>
-            </div>
-
-            <div class="column large-4 medium-12">
-            <div class="secondary callout text-center">
-              <img src="img/deco3.jpg" alt="decoracion3" class="thumbnail">
-              <h5>Decoración 3</h5>
-              <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-            </div>
-          </div>
-
-      </div>
-
-<!--SEGUNDA FILA DE DECORACION-->
-      <div class="row large-uncollapse">
-
-          <div class="column large-4 medium-6 small-12">
-            <div class="secondary callout text-center">
-              <img src="img/deco4.jpg" alt="decoracion4" class="thumbnail">
-              <h5>Decoración 4</h5>
-              <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-            </div>
-          </div>
-
-          <div class="column large-4 medium-6 small-12">
-              <div class="secondary callout text-center">
-                <img src="img/deco5.jpg" alt="decoracion5" class="thumbnail">
-                <h5>Decoración 5</h5>
-                <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-              </div>
-          </div>
-
-          <div class="column large-4 medium-12">
-          <div class="secondary callout text-center">
-            <img src="img/deco6.jpg" alt="decoracion6" class="thumbnail">
-            <h5>Decoración 6</h5>
-            <p> <a href="#">Ver más  <i class="step fi-plus"></i></a> </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    </div>
-  </div>
-</div>
 </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/what-input.js"></script>
-<script src="js/foundation.min.js" charset="utf-8"></script>
-<script src="js/home.js" charset="utf-8"></script>
+<!--COLUMNA DERECHA**PRIMER POST-->
+
+  <div class="small-12 medium-8 columns ">
+          <div class="small-12 callout menuRight">
+              <h4 class="title">Arroz</h4>
+              <p>22 de mayo de 2016</p>
+              <div class="small-12 ">
+                <div class="orbit" role="region" aria-label="dfeelos de arroz" data-orbit>
+                  <div class="orbit-wrapper">
+                    <div class="orbit-controls">
+                      <button class="orbit-previous"><span class="show-for-sr">Imagen previa</span>&#9664;&#xFE0E;</button>
+                      <button class="orbit-next"><span class="show-for-sr">Imagen siguiente</span>&#9654;&#xFE0E;</button>
+                    </div>
+                      <ul class="orbit-container">
+                        <li class="is-active orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="img/plato1.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Arroz con pollo</figcaption>
+                          </figure>
+                        </li>
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="img/plato1.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Arroz con carne</figcaption>
+                          </figure>
+                        </li>
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="img/plato1.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Arroz con salsa</figcaption>
+                          </figure>
+                        </li>
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="img/plato1.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Arroz con hongos</figcaption>
+                          </figure>
+                        </li>
+                      </ul>
+                    </div>
+                    <nav class="orbit-bullets">
+                      <button class="is-active" data-slide="0"><span class="show-for-sr">Detalle de primer imagen</span><span class="show-for-sr">Imagen corriendo</span></button>
+                      <button data-slide="1"><span class="show-for-sr">Detalle de segunda imagen</span></button>
+                      <button data-slide="2"><span class="show-for-sr">Detalle de tercera imagen</span></button>
+                      <button data-slide="3"><span class="show-for-sr">Detalle de cuarta imagen</span></button>
+                    </nav>
+                  </div>
+                </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="">
+                    <textarea name="coments" rows="3" placeholder="comentarios" ></textarea>
+                    <a class="button primary comentar" href="#"><i class="fi-pencil"></i>Publicar</a>
+                  </div>
+
+                  <hr>
+
+                  <div class="callout small">
+                      <img src="img/avatarMuj.png" class="avatar"alt="">
+                      <h5>@mamaias</h5>
+                      <p>muy buena receta</p>
+                  </div>
+                  <div class="callout small">
+                      <img src="img/avatarHom.png" class="avatar"alt="">
+                      <h5>@aleph</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  </div>
+                  <div class="callout small">
+                      <img src="img/avatarMuj.png" class="avatar"alt="">
+                      <h5>@mamaias</h5>
+                      <p>muy buena receta</p>
+                  </div>
+
+              </div>
+
+              <!--COLUMNA DERECHA**PRIMER POST-->
+
+              <div class="small-12 column callout menuRight">
+                  <h4 class="title">Carne con papas</h4>
+                  <p>22 de mayo de 2016</p>
+                    <div class="small-12 ">
+                      <div class="orbit" role="region" aria-label="dfeelos de arroz" data-orbit>
+                        <div class="orbit-wrapper">
+                          <div class="orbit-controls">
+                            <button class="orbit-previous"><span class="show-for-sr">Imagen previa</span>&#9664;&#xFE0E;</button>
+                            <button class="orbit-next"><span class="show-for-sr">Imagen siguiente</span>&#9654;&#xFE0E;</button>
+                          </div>
+                            <ul class="orbit-container">
+                              <li class="is-active orbit-slide">
+                                <figure class="orbit-figure">
+                                  <img class="orbit-image" src="img/plato2.jpg" alt="Space">
+                                  <figcaption class="orbit-caption">Carne con arroz</figcaption>
+                                </figure>
+                              </li>
+                              <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                  <img class="orbit-image" src="img/plato2.jpg" alt="Space">
+                                  <figcaption class="orbit-caption">Carne con papas</figcaption>
+                                </figure>
+                              </li>
+                              <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                  <img class="orbit-image" src="img/plato2.jpg" alt="Space">
+                                  <figcaption class="orbit-caption">Carne con salsa</figcaption>
+                                </figure>
+                              </li>
+                              <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                  <img class="orbit-image" src="img/plato2.jpg" alt="Space">
+                                  <figcaption class="orbit-caption">Carne con hongos</figcaption>
+                                </figure>
+                              </li>
+                            </ul>
+                          </div>
+                          <nav class="orbit-bullets">
+                            <button class="is-active" data-slide="0"><span class="show-for-sr">Detalle de primer imagen</span><span class="show-for-sr">Imagen corriendo</span></button>
+                            <button data-slide="1"><span class="show-for-sr">Detalle de segunda imagen</span></button>
+                            <button data-slide="2"><span class="show-for-sr">Detalle de tercera imagen</span></button>
+                            <button data-slide="3"><span class="show-for-sr">Detalle de cuarta imagen</span></button>
+                          </nav>
+                        </div>
+                      </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <div class="">
+                          <textarea name="coments" rows="3" placeholder="comentarios" ></textarea>
+                          <a class="button primary comentar" href="#"><i class="fi-pencil"></i>Publicar</a>
+                        </div>
+                          <hr>
+                          <div class="callout small">
+                              <img src="img/avatarMuj.png" class="avatar"alt="">
+                              <h5>@mamaias</h5>
+                              <p>muy buena receta</p>
+                          </div>
+                          <div class="callout small">
+                              <img src="img/avatarHom.png" class="avatar"alt="">
+                              <h5>@aleph</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                          </div>
+                          <div class="callout small">
+                              <img src="img/avatarMuj.png" class="avatar"alt="">
+                              <h5>@mamaias</h5>
+                              <p>muy buena receta</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.min.js" charset="utf-8"></script>
+<script src="js/app.js" charset="utf-8"></script>
 
 </body>
 </html>
